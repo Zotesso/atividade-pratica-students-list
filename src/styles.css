@@ -1,0 +1,24 @@
+/* Preferi utilizar o bootstrap como uma dependência do projeto
+   npm i bootstrap + import de seu bundle minificado.
+*/
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Zerando tudo por padrão */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+}
+
+/* Definições básicas de estilo para o body que nessa situação simples vai servir como wrapper do projeto */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #212529;
+}

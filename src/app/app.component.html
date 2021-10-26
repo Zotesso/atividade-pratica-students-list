@@ -1,0 +1,30 @@
+<h1 class="text-white w-100 text-center overflow-hidden">
+  Lista de alunos
+</h1>
+
+<!-- Utilizei as classes table table-striped e table-dark do bootstrap 
+  para formatar minha tabela conforme o desejado
+-->
+<table class="table table-striped mt-5 table-dark">
+  <!-- Separei então entre head e body -->
+  <thead class="thead-dark">
+    <!-- Head contendo dentro de si as propriedades em th -->
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">RU</th>
+      <th scope="col">Curso</th>
+      <th scope="col">Data de nascimento</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <!-- E body contendo dentro de si os valores em td, 
+      utilizando ngFor para iterar sobre o array de valores possíveis -->
+    <tr *ngFor="let student of students">
+      <td scope="row">{{ student.name }}</td>
+      <td scope="row">{{ student.ru }}</td>
+      <td scope="row">{{ student.courseName }}</td>
+      <td scope="row">{{ student.birthday }}</td>
+    </tr>
+  </tbody>
+</table>
